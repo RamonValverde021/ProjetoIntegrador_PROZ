@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+/* Fonte Principal - Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+   /* Resetar modulos de espaçamentos*/
+   margin: 0px;
+   padding: 0px;
+}
+
+html {
+   font-family: "Open Sans", sans-serif;
+   /* Impede que o conteúdo fora da tela seja visível */
+   overflow-x: hidden;
+   /*estilo para que a rolagem seja suave*/
+   scroll-behavior: smooth;
+}
+
+/* ---------------------------- Cabeçalho ---------------------------- */
+
+nav.navbar {
+   display: flex;
+   align-items: center;
+   box-shadow: 0px 0px 5px 2px darkgray;
+   padding: 5px 0;
+   background-color: white;
+}
+
+div.container-fluid {
+   background-color: white;
+}
+
+img#logomarca {
+   height: 100px;
+}
+
+ul.navbar-nav {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   background-color: white;
+}
+
+li.nav-item {
+   list-style: none;
+   margin: 0 15px;
+   text-align: center;
+   border-radius: 15px;
+   padding: 0 5px;
+}
+
+li.nav-item:hover {
+   background-color: rgba(22, 138, 80, 0.8);
+   transition: 0.4s;
+}
+
+a.nav-link {
+   font-family: "Open Sans", sans-serif;
+   text-decoration: none;
+   color: rgb(45, 62, 81);
+   border-radius: 10px;
+   font-weight: 500;
+   font-size: 18px;
+   padding: 5px;
+}
+
+a.nav-link:hover {
+   color: rgb(255, 255, 255);
+   transition: 0.4s;
+}
+
+button.navbar-toggler {
+   color: rgba(15, 70, 87, 0.7);
+   padding: 0;
+   margin: 0;
+}
+
+button.navbar-toggler:hover {
+   color: rgba(22, 138, 80, 0.8);
+   transition: 0.4s;
+}
+
+span.navbar-toggler-icon {
+   background-image: none;
+   font-size: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0;
+   margin: 0;
+   margin-top: -2px;
+}
+
+span.navbar-toggler-icon:hover {
+   color: rgba(22, 138, 80, 0.8);
+   transition: 0.4s;
+}
+
+
+/* ---------------------------- Rodapé ---------------------------- */
+footer#rodape_pagina {
+   background-color: rgb(19, 36, 53);
+   text-align: center;
+}
+
+div.footer_site {
+   color: white;
+   background-color: rgb(19, 36, 53);
+   display: flex;
+   flex-wrap: wrap;
+}
+
+section.footer_section {
+   width: 25%;
+   min-height: 220px;
+   text-align: center;
+   padding: 10px;
+}
+
+h3.h3_footer {
+   margin-bottom: 10px;
+   text-transform: uppercase;
+   font-weight: normal;
+}
+
+/* section logo */
+section#footer_logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+section#footer_info {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   flex-direction: column;
+}
+
+section#footer_links {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   flex-direction: column;
+}
+
+section#footer_social {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   flex-direction: column;
+}
+
+img#logo_footer {
+   height: 180px;
+}
+
+/* section info */
+p.footer_text {
+   font-weight: normal;
+   font-size: 16px;
+   text-align: left;
+   color: rgb(221, 221, 221);
+}
+
+ul.footer_menu {
+   padding: 0;
+}
+
+li.footer_item {
+   border-radius: 15px;
+   padding: 5px;
+   list-style: none;
+}
+
+li.footer_item:hover {
+   background-color: rgba(41, 76, 116, 0.5);
+   transition: 0.4s;
+
+   a.footer_link {
+      color: rgb(255, 255, 255);
+   }
+}
+
+a.footer_link {
+   text-decoration: none;
+   color: rgb(138, 138, 138);
+   border-radius: 10px;
+   font-size: 18px;
+   padding: 5px;
+}
+
+/* section social */
+section#footer_social {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+img.social_icon {
+   margin: 10px 0;
+   height: 40px;
+   width: 40px;
+}
+
+img.social_icon:hover {
+   opacity: 0.4;
+   transition: 0.4s;
+}
+
+a#voltar_topo {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   font-weight: bold;
+   padding: 5px 10px;
+   border: 2px solid rgb(255, 255, 255);
+   border-radius: 5px;
+   transition: 0.3s;
+   margin-top: 10px;
+}
+
+a#voltar_topo:hover {
+   background-color: rgb(255, 255, 255);
+   border: 2px solid rgb(22, 105, 138);
+   color: rgb(22, 105, 138);
+}
+
+/* copyright */
+div.line {
+   width: 90%;
+   margin: 0 5%;
+   height: 1px;
+   background-color: white;
+}
+
+p.footer_copy {
+   font-weight: normal;
+   font-size: 16px;
+   color: rgb(221, 221, 221);
+   padding: 10px 0 20px 0;
+   margin-bottom: 0;
+}
+
+
+/* ---------------------------- Correção de Tela ---------------------------- */
+
+@media(max-width: 550px) {
+   /* Rpdapé */
+
+   section.footer_section {
+      width: 50%;
+   }
+
+   h3.h3_footer {
+      margin-top: 5px;
+      font-size: 18px;
+   }
+
+   section#footer_logo {
+      display: none;
+   }
+
+   section#footer_info {
+      display: none;
+   }
+
+   a.footer_link {
+      font-size: 16px;
+   }
+
+   div.icones {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
+
+   img.social_icon {
+      width: 45px;
+      height: 45px;
+      margin: 15px 0;
+   }
+
+   a#voltar_topo {
+      font-size: 12px;
+      margin-bottom: 5px;
+   }
+
+   p.footer_copy {
+      font-size: 14px;
+   }
+
+}

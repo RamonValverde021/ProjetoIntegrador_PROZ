@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+/* Fonte Principal - Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset básico */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-family: "Open Sans", sans-serif;
+   scroll-behavior: smooth;
+}
+
+main {
+   
+   width: 76%;
+   margin: 2% 10%;
+   padding: 2%;
+   border: 2px solid darkgray;
+   border-radius: 6px;
+   box-shadow: 0px 0px 10px 2px darkgray;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: white;
+}
+
+h1.h1 {
+   width: 100%;
+   color: rgb(22, 138, 80);
+   text-align: center;
+   margin-bottom: 10px;
+   font-size: 33px;
+}
+
+h2.comunicacao {
+   font-size: 1rem;
+   text-align: right;
+   color: #b8740e;
+   margin-bottom: 10px;
+}
+h2.h2{
+   width: 100%;
+   text-align: left;
+   color: rgb(22, 105, 138);
+   margin-bottom: -10px;
+}
+
+img.imagem1 {
+   width: 60%;
+   height: auto;
+   object-fit: cover;
+   border-radius: 8px;
+   margin-bottom: 15px;
+}
+
+p.paragrafo {
+   color: #2C2C2C;
+   font-weight: 550;
+   font-size: 1rem;
+   line-height: 1.6;
+   text-align: justify;
+   margin-bottom: 10px;
+}
+
+ul.formulario_ul {
+   list-style: none;
+   display: flex;
+   gap: 10px;
+   padding: 10px 0;
+}
+
+a.formulario_a {
+   text-decoration: none;
+   color: #3B8A16;
+   font-weight: bold;
+   padding: 5px 10px;
+   border: 2px solid #3B8A16;
+   border-radius: 5px;
+   transition: 0.3s;
+}
+
+a.formulario_a:hover {
+   background-color: #3B8A16;
+   color: white;
+}
+   */
+
+fieldset {
+   width: 100%;
+   border: none;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   margin-top: 15px;
+}
+
+input, textarea {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 1rem;
+}
+
+textarea {
+   resize: none;
+   height: 100px;
+}
+
+iframe {
+   width: 100%;
+   max-width: 560px;
+   height: 315px;
+   border-radius: 8px;
+   margin-bottom: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+   main {
+       padding: 15px;
+   }
+   h1.h1 {
+       font-size: 1.8rem;
+   }
+   p.paragrafo {
+       font-size: 0.95rem;
+   }
+}

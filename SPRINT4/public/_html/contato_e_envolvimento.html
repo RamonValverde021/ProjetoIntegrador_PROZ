@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato e envolvimento</title>
+    <link rel="icon" href="../_imagens/icone.png">
+    <link rel="stylesheet" href="../_css/contato_e_envolvimento.css">
+    <link rel="stylesheet" type="text/css" href="../_css/contato_e_envolvimento.css">
+    <link rel="stylesheet" type="text/css" href="../_css/styles.css">
+    <script language="JavaScript" src="_javascript/contato_e_envolvimento.js" defer></script>
+    <script language="JavaScript" src="../_javascript/script.js" defer></script>
+    <link href="../_bootstrap-5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <script language="JavaScript" src="../_bootstrap-5.3.3/js/bootstrap.bundle.min.js" defer></script>
+</head>
+
+<body>
+
+    <main class="principal">
+        <section class="contatos" id="esquerda">
+            <h1 class="h1_principal">Se Envolva</h1>
+            <form id="formEnvolvimento" action="#">
+
+                <fieldset class="fieldset_form">
+
+                    <label for="nome" class="label_form">Nome: </label>
+                    <input type="text" id="nome" class="input_form" placeholder="Digite seu nome e sobrenome">
+
+                    <label for="email" class="label_form">E-Mail: </label>
+                    <input type="text" id="email" class="input_form" placeholder="Digite seu e-mail">
+
+                    <label for="whatsapp" class="label_form">WhatsApp: </label>
+                    <input type="text" id="whatsapp" class="input_form" placeholder="Digite seu WhatsApp">
+
+                    <label class="label_form">Selecione o projeto que deseja se envolver:</label>
+                    <div id="projetoEscolha">
+                        <label id="label_op1" for="op1" class="label_checkbox"><input type="checkbox" id="op1"
+                            class="checkbox_form"> Projeto 1:</label><a class="link_form"
+                            href="https://imoveis.estadao.com.br/aquitetura-sustentavel/5-dicas-para-criar-um-projeto-sustentavel-para-apartamento/">
+                            Clique aqui para conhecer o projeto</a>
+
+                        <label for="op2" class="label_checkbox"><input type="checkbox" id="op2"
+                            class="checkbox_form"> Projeto 2:</label><a class="link_form"
+                            href="https://www.auxiliadorapredial.com.br/blog/praticas-sustentaveis-condominio/">Clique
+                            aqui para conhecer o projeto</a>
+
+                        <label for="op3" class="label_checkbox"><input type="checkbox" id="op3"
+                            class="checkbox_form"> Projeto 3:</label><a class="link_form"
+                            href="https://www.direcional.com.br/blog/condominio/ideias-sustentaveis/">Clique aqui para
+                            conhecer o projeto</a>
+
+                        <label for="op4" class="label_checkbox"><input type="checkbox" id="op4"
+                            class="checkbox_form"> Projeto 4:</label><a class="link_form"
+                            href="https://www.ecycle.com.br/condominios-sustentaveis/">Clique aqui para conhecer o
+                            projeto</a>
+
+                    </div>
+                    <button class="btn_enviar">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <hr class="divisoria">
+        <section class="contatos" id="direita">
+            <h1 class="h1_principal">Contato</h1>
+            <form id="formContato" action="#">
+                <fieldset class="fieldset_form">
+                    <label for="nome_contato" class="label_form">Nome: </label>
+                    <input type="text" id="nome_contato" class="input_form" placeholder="Digite seu nome e sobrenome">
+                    <label for="email_contato" class="label_form">E-Mail: </label>
+                    <input type="text" id="email_contato" class="input_form" placeholder="Digite seu e-mail">
+                    <label for="whatsapp_contato" class="label_form">WhatsApp: </label>
+                    <input type="text" id="whatsapp_contato" class="input_form" placeholder="Digite seu WhatsApp">
+                    <label for="duvidas" class="label_form">Digite no espaço abaixo sua dúvida ou sugestão:</label>
+                    <textarea id="duvidas" class="textarea_form" placeholder="Digite aqui sua dúvida ou sugestão"></textarea>
+                    <button class="btn_enviar">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

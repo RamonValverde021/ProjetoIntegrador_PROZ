@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/* Fonte Principal - Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+   /* Resetar modulos de espaçamentos*/
+   margin: 0px;
+   padding: 0px;
+}
+
+html {
+   font-family: "Open Sans", sans-serif;
+}
+
+/*Alterações no conteúdo da página*/
+
+main{
+   display: flex;
+   margin: 10px 100px;
+   border: 2px solid darkgray;
+   border-radius: 6px;
+   box-shadow: 0px 0px 10px 2px darkgray;
+   
+}
+   .contatos{
+      width: 50%;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      border-radius: 10px;
+   }
+
+.contatos div {
+   margin-top: 10px;
+}
+
+.contatos p{
+   margin-top: 10px;
+}
+
+h2{
+   color: rgb(22, 138, 80);
+   text-align: left;
+   margin-bottom: 10px;
+   font-size: 33px;
+}
+#projetoEscolha{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+#nome, #email, #nome_contato, #email_contato{
+   width: 300px;
+   height: 25px;
+   border-radius: 5px;
+   padding: 5px;
+}
+
+#whatsapp, #whatsapp_contato{
+   width: 273px;
+   height: 25px;
+   border-radius: 5px;
+   padding: 5px;
+}
+
+a{
+   text-decoration: none;
+}
+#duvidas{
+   width: 80%;
+   height: 200px;
+   border-radius: 10px;
+   padding: 10px;
+}
+
+button {
+   font-size: 15px;
+   font-weight: 550;
+   color: #333;
+   text-decoration: none;
+   padding: 8px 12px;
+   border-radius: 5px;
+   border: 2px solid lightgray;
+   transition: all 0.3s;
+   background-color: #f0f0f0;
+   margin: 20px 0;
+}
+
+button:hover {
+   background-color: #2e8b57;
+   color: white;
+   border: 2px solid white;
+   cursor: pointer;
+}
+
+footer{
+   background-color: rgb(173, 235, 173);
+   margin-top: 3px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+

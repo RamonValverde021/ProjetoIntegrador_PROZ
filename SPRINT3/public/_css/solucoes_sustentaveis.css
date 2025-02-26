@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/* Fonte Principal - Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+   /* Resetar modulos de espaçamentos*/
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+html {
+   font-family: "Open Sans", sans-serif;
+   scroll-behavior: smooth;
+}
+
+main {
+   padding: 20px;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+/* Navegação interna */
+nav[aria-label="Navegação entre as soluções"] ul {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   padding: 15px 0;
+   margin-bottom: 20px;
+   border-bottom: 2px solid #2e8b57;
+}
+
+nav[aria-label="Navegação entre as soluções"] li {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+
+nav[aria-label="Navegação entre as soluções"] a {
+   color: #333;
+   text-decoration: none;
+   padding: 8px 12px;
+   border-radius: 5px;
+   transition: all 0.3s;
+   background-color: #f0f0f0;
+}
+
+nav[aria-label="Navegação entre as soluções"] a:hover {
+   background-color: #2e8b57;
+   color: white;
+}
+
+/* Cards */
+.card {
+   background-color: #fff;
+   border-radius: 10px;
+   padding: 20px;
+   margin-bottom: 25px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s box-shadow 0.3s;
+   overflow: hidden;
+}
+
+.card:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos e Textos */
+h1 {
+   font-size: 2.5em;
+   margin-bottom: 20px;
+   color: #2e8b57;
+   text-align: center;
+}
+
+h2#introducao-sustentabilidade {
+   color: rgb(22, 138, 80);
+}
+
+h2 {
+   font-size: 2em;
+   margin-bottom: 15px;
+   color: rgb(22, 105, 138);
+}
+
+p {
+   font-size: 1em;
+   color: #444;
+   line-height: 1.6;
+   margin-bottom: 15px;
+}
+
+/* Imagens */
+figure {
+   float: left;
+   margin: 0 20px 15px 0;
+   text-align: center;
+   max-width: 45%;
+}
+
+figcaption {
+   text-align: center;
+   font-size: 0.85em;
+   color: #666;
+   margin-top: 2px;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 8px;
+}

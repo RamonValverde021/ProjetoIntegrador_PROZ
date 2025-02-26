@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+/* Fonte Principal - Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+   /* Resetar modulos de espaçamentos*/
+   margin: 0px;
+   padding: 0px;
+}
+
+html {
+   font-family: "Open Sans", sans-serif;
+}
+
+main.principal {
+   width: 76%;
+   margin: 2% 10%;
+   padding: 2%;
+   border: 2px solid darkgray;
+   border-radius: 12px;
+   box-shadow: 0px 0px 10px 2px darkgray;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+img.banner {
+   width: 100%;
+   margin: 15px 0;
+   border-radius: 10px;
+   box-shadow: 0px 0px 5px 2px darkgray;
+}
+
+img.img_main {
+   margin: 10px 0;
+}
+
+img#grafico01 {
+   width: 70%;
+}
+
+img#grafico02 {
+   width: 80%;
+}
+
+img#grafico03 {
+   width: 65%;
+}
+
+img#grafico04 {
+   width: 65%;
+}
+
+img#grafico05 {
+   width: 100%;
+}
+
+img#grafico06 {
+   width: 70%;
+}
+
+h1.h1_main {
+   width: 100%;
+   color: rgb(22, 138, 80);
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 33px;
+}
+
+h2.h2_main {
+   width: 100%;
+   text-align: left;
+   color: rgb(22, 105, 138);
+   margin-top: 30px;
+   margin-bottom: 10px;
+}
+
+legend.legend_1 {
+   width: 100%;
+   text-align: center;
+   color: #b8740e;
+   font-weight: bold;
+   font-size: 15px;
+   margin-bottom: -5px;
+}
+
+p.p_main {
+   color: rgb(44, 44, 44);
+   font-weight: 550;
+   font-size: 16px;
+}
+
+canvas.graficos {
+   background-color: darkgray;
+   border-radius: 20px;
+   padding-bottom: 10px;
+}
+
+/* --------------------------- RESPONSIVIDADE --------------------------- */
+
+@media(max-width: 550px) {
+
+   main.principal {
+      width: 90%;
+      margin: 15px 5%;
+      padding: 15px;
+   }
+
+   h1.h1_main {
+      font-size: 25px;
+   }
+
+   legend.legend_1 {
+      font-size: 12px;
+   }
+
+   h2.h2_main {
+      font-size: 20px;
+      margin: 0;
+   }
+
+   p.p_main {
+      font-size: 12px;
+   }
+
+}

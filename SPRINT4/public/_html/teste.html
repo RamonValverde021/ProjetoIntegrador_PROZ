@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico Doughnut com Texto Personalizado</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+<body>
+    <canvas id="meuGrafico"></canvas>
+
+    <script>
+        const ctx = document.getElementById('meuGrafico').getContext('2d');
+
+        // Dados do gráfico
+        const dados = {
+            labels: ['Vermelho', 'Azul', 'Verde', 'Amarelo'], // Essas labels NÃO serão usadas nos textos internos
+            datasets: [{
+                data: [40, 25, 20, 15], // Valores das fatias
+                backgroundColor: ['#FF4D4D', '#4D79FF', '#4DFF4D', '#FFD24D']
+            }]
+        };
+
+        // Textos personalizados para cada fatia
+        const textosPersonalizados = ['Alerta', 'Calma', 'Natureza', 'Energia'];
+
+        const config = {
+            type: 'doughnut',
+            data: dados,
+            options: {
+                responsive: true,
+                plugins: {
+                    datalabels: {
+                        color: '#fff', // Cor do texto
+                        font: {
+                            size: 14,
+                            weight: 'bold'
+                        },
+                        formatter: (value, context) => {
+                            return textosPersonalizados[context.dataIndex]; // Exibe o texto personalizado
+                        }
+                    }
+                }
+            },
+            plugins: [ChartDataLabels] // Ativa o plugin
+        };
+
+        new Chart(ctx, config);
+    </script>
+</body>
+</html>

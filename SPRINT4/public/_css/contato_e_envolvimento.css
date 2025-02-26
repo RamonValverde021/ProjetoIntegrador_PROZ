@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+/* Fonte Principal - Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+   /* Resetar modulos de espaçamentos*/
+   margin: 0px;
+   padding: 0px;
+}
+
+html {
+   font-family: "Open Sans", sans-serif;
+}
+
+/*Alterações no conteúdo da página*/
+
+main.principal {
+   width: 76%;
+   margin: 2% 10%;
+   padding: 2%;
+   border: 2px solid darkgray;
+   border-radius: 12px;
+   box-shadow: 0px 0px 10px 2px darkgray;
+   display: flex;
+   flex-wrap: nowrap;
+}
+
+section.contatos {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   padding: 0 15px 15px 15px;
+   border-radius: 10px;
+}
+
+p.paragrafo {
+   margin: 0;
+}
+
+h1.h1_principal {
+   width: 100%;
+   color: rgb(22, 138, 80);
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 33px;
+}
+
+fieldset.fieldset_form {
+   width: 100%;
+   border: none;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+label.label_form {
+   color: rgb(44, 44, 44);
+   font-weight: 500;
+   font-size: 20px;
+}
+
+textarea#duvidas {
+   width: 100%;
+   height: 150px;
+   border-radius: 10px;
+   padding: 10px;
+}
+
+input.input_form,
+textarea.textarea_form {
+   width: 100%;
+   padding: 5px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 16px;
+   border: solid 1px rgb(44, 44, 44);
+   margin-top: -8px;
+}
+
+input.input_form:focus,
+textarea.textarea_form:focus {
+   border-color: rgb(44, 44, 44);
+   box-shadow: 0 0 5px rgb(44, 44, 44);
+   outline: none;
+}
+
+input.checkbox_form {
+   accent-color: rgb(22, 105, 138);
+   width: 15px;
+   height: 15px;
+}
+
+label#label_op1 {
+   margin-top: 0;
+}
+
+label.label_checkbox {
+   margin-top: 10px;
+   color: rgb(44, 44, 44);
+   font-weight: 500;
+   font-size: 20px;
+}
+
+a.link_form {
+   text-decoration: none;
+   color: rgb(22, 105, 138);
+   font-weight: 500;
+   font-style: italic;
+}
+
+a.link_form:hover {
+   color: rgb(57, 151, 185);
+   text-decoration: underline;
+}
+
+button.btn_enviar {
+   width: 100px;
+   text-decoration: none;
+   color: rgb(22, 138, 80);
+   background-color: white;
+   font-weight: bold;
+   padding: 5px 10px;
+   border: 2px solid rgb(22, 138, 80);
+   border-radius: 5px;
+   transition: 0.3s;
+   margin-top: 10px;
+}
+
+button.btn_enviar:hover {
+   background-color: rgb(22, 138, 80);
+   color: white;
+}
+
+div#projetoEscolha {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-top: -8px;
+}
+
+hr.divisoria {
+   display: none;
+}
+
+/* --------------------------- RESPONSIVIDADE --------------------------- */
+
+@media(max-width: 550px) {
+
+   main.principal {
+      width: 90%;
+      margin: 15px 5%;
+      padding: 15px;
+
+      display: block;
+   }
+
+   section.contatos {
+      width: 100%;
+   }
+
+   h1.h1_principal {
+      font-size: 25px;
+   }
+
+   h2#introducao-sustentabilidade {
+      font-size: 22px;
+   }
+
+   h2.h2_subtitulo {
+      font-size: 20px;
+   }
+
+   hr.divisoria {
+      display: block;
+      border-top: 3px solid rgb(22, 138, 80);
+   }
+
+   p.paragrafo {
+      font-size: 12px;
+   }
+
+   a.link_form {
+      font-size: 12px;
+   }
+
+   label.label_form,
+   label.label_checkbox {
+      font-size: 12px;
+   }
+
+   input.input_form,
+   textarea.textarea_form {
+      font-size: 12px;
+      padding: 5px;
+   }
+
+   button.btn_enviar {
+      font-size: 12px;
+      width: 80px;
+   }
+
+}

@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+/* Fonte Principal - Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset básico */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-family: "Open Sans", sans-serif;
+   scroll-behavior: smooth;
+}
+
+main.principal {
+   width: 76%;
+   margin: 2% 10%;
+   padding: 2%;
+   border: 2px solid darkgray;
+   border-radius: 12px;
+   box-shadow: 0px 0px 10px 2px darkgray;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: white;
+}
+
+h1.h1 {
+   width: 100%;
+   color: rgb(22, 138, 80);
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 33px;
+}
+
+h2.comunicacao {
+   width: 100%;
+   text-align: center;
+   color: #b8740e;
+   font-weight: bold;
+   font-size: 15px;
+   margin-bottom: -5px;
+}
+
+h2.h2 {
+   width: 100%;
+   text-align: left;
+   color: rgb(22, 105, 138);
+   margin: 25px 0 10px 0;
+}
+
+img.imagem1 {
+   width: 80%;
+   height: auto;
+   object-fit: cover;
+   margin: 15px 0;
+   border-radius: 10px;
+   box-shadow: 0px 0px 5px 2px darkgray;
+}
+
+p.paragrafo {
+   line-height: 1.6;
+   text-align: justify;
+   margin-bottom: 10px;
+   color: rgb(44, 44, 44);
+   font-weight: 550;
+   font-size: 16px;
+}
+
+p.paragrafo_dica {
+   line-height: 1.6;
+   text-align: justify;
+   margin-bottom: 10px;
+   color: rgb(44, 44, 44);
+   font-weight: 500;
+   font-size: 16px;
+   font-style: italic;
+}
+
+ul.formulario_ul {
+   list-style: none;
+   display: flex;
+   gap: 10px;
+   padding: 10px 0;
+}
+
+a.formulario_a {
+   text-decoration: none;
+   color: rgb(22, 105, 138);
+   font-weight: bold;
+   padding: 5px 10px;
+   border: 2px solid rgb(22, 105, 138);
+   border-radius: 5px;
+   transition: 0.3s;
+}
+
+a.formulario_a:hover {
+   background-color: rgb(22, 105, 138);
+   color: white;
+}
+
+button.btn_enviar {
+   width: 100px;
+   text-decoration: none;
+   color: rgb(22, 138, 80);
+   background-color: white;
+   font-weight: bold;
+   padding: 5px 10px;
+   border: 2px solid rgb(22, 138, 80);
+   border-radius: 5px;
+   transition: 0.3s;
+   margin-top: 10px;
+}
+
+button.btn_enviar:hover {
+   background-color: rgb(22, 138, 80);
+   color: white;
+}
+
+hr.divisoria {
+   border-top: 2px solid rgb(22, 138, 80);
+}
+
+fieldset.fieldset_form {
+   width: 100%;
+   border: none;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   margin-top: 15px;
+}
+
+label.label_form {
+   color: rgb(44, 44, 44);
+   font-weight: 500;
+   font-size: 20px;
+}
+
+input.input_form,
+textarea.textarea_form {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 16px;
+   border: solid 1px rgb(44, 44, 44);
+   margin-top: -8px;
+}
+
+input.input_form:focus,
+textarea.textarea_form:focus {
+   border-color: rgb(44, 44, 44);
+   box-shadow: 0 0 5px rgb(44, 44, 44);
+   outline: none;
+}
+
+textarea.textarea_form {
+   resize: none;
+   height: 100px;
+}
+
+div.div_iframe {
+   width: 100%;
+   text-align: center;
+}
+
+iframe.iframe_video {
+   min-width: 70%;
+   height: 27vw;
+   margin-bottom: 15px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 5px 2px darkgray;
+}
+
+/* --------------------------- RESPONSIVIDADE --------------------------- */
+
+@media(max-width: 550px) {
+
+   main.principal {
+      width: 90%;
+      margin: 15px 5%;
+      padding: 15px;
+   }
+
+   h1.h1 {
+      font-size: 25px;
+   }
+
+   h2.comunicacao {
+      font-size: 12px;
+   }
+
+   h2.h2 {
+      font-size: 20px;
+      margin: 0;
+   }
+
+   p.paragrafo {
+      font-size: 12px;
+   }
+
+   p.paragrafo_dica {
+      font-size: 12px;
+   }
+
+   iframe.iframe_video {
+      min-width: 70%;
+      height: 45vw;
+   }
+
+   a.formulario_a {
+      font-size: 12px;
+   }
+
+   label.label_form {
+      font-size: 12px;
+   }
+
+   input.input_form,
+   textarea.textarea_form {
+      font-size: 12px;
+      padding: 5px;
+   }
+
+   button.btn_enviar {
+      font-size: 12px;
+      width: 80px;
+   }
+
+}

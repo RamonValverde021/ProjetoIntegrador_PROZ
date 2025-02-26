@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+/* Fonte Principal - Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+   /* Resetar modulos de espaçamentos*/
+   margin: 0px;
+   padding: 0px;
+}
+
+html {
+   font-family: "Open Sans", sans-serif;
+   /* Impede que o conteúdo fora da tela seja visível */
+   overflow-x: hidden;
+   /*estilo para que a rolagem seja suave*/
+   scroll-behavior: smooth;
+}
+
+/* ---------------------------- Cabeçalho ---------------------------- */
+
+nav.nav_menu {
+   display: flex;
+   align-items: center;
+   box-shadow: 0px 0px 5px 2px darkgray;
+   padding: 5px 0;
+}
+
+img#logomarca {
+   height: 100px;
+}
+
+ul.nav_group {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+li.nav_item {
+   list-style: none;
+   margin: 0 15px;
+   text-align: center;
+
+   border-radius: 15px;
+   padding: 5px;
+}
+
+li.nav_item:hover {
+   background-color: rgba(22, 138, 80, 0.8);
+   transition: 0.4s;
+}
+
+a.nav_link {
+   text-decoration: none;
+   color: rgb(45, 62, 81);
+   border-radius: 10px;
+   font-weight: 500;
+   font-size: 18px;
+   padding: 5px;
+}
+
+a.nav_link:hover {
+   color: rgb(255, 255, 255);
+   transition: 0.4s;
+}
+
+
+
+/* ---------------------------- Rodapé ---------------------------- */
+footer {
+   background-color: rgb(19, 36, 53);
+   text-align: center;
+}
+
+div.footer_site {
+   color: white;
+   background-color: rgb(19, 36, 53);
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+}
+
+section.footer_section {
+   width: 25%;
+   min-height: 220px;
+   padding: 10px;
+   text-align: center;
+}
+
+h3.h3_footer {
+   margin-bottom: 10px;
+   text-transform: uppercase;
+   font-weight: normal;
+}
+
+/* section logo */
+section#footer_logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+img#logo_footer {
+   height: 180px;
+}
+
+/* section info */
+p.footer_text {
+   font-weight: normal;
+   font-size: 16px;
+   text-align: left;
+   color: rgb(221, 221, 221);
+}
+
+ul.footer_menu {
+   display: flex;
+   flex-direction: column;
+}
+
+li.footer_item {
+   list-style: none;
+   border-radius: 15px;
+   padding: 5px;
+}
+
+li.footer_item:hover {
+   background-color: rgba(41, 76, 116, 0.5);
+   transition: 0.4s;
+
+   a.footer_link {
+      color: rgb(255, 255, 255);
+   }
+}
+
+a.footer_link {
+   text-decoration: none;
+   color: rgb(138, 138, 138);
+   border-radius: 10px;
+   font-size: 18px;
+   padding: 5px;
+}
+
+/* section social */
+section#footer_social {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+img.social_icon {
+   margin: 10px 0;
+   height: 40px;
+   width: 40px;
+}
+
+img.social_icon:hover {
+   opacity: 0.4;
+   transition: 0.4s;
+}
+
+/* copyright */
+div.line {
+   width: 90%;
+   margin: 10px 5%;
+   height: 1px;
+   background-color: white;
+}
+
+p.footer_copy {
+   font-weight: normal;
+   font-size: 16px;
+   color: rgb(221, 221, 221);
+   padding: 10px 0 20px 0;
+}
+
+
+/* ---------------------------- Correção de Tela ---------------------------- */
+
+@media(max-width: 550px) {
+
+   /* Cabeçalho */
+   ul.nav_group {
+      flex-direction: column;
+      padding: 10px 0;
+   }
+
+   img#logomarca {
+      height: 200px;
+   }
+
+   li.nav_item {
+      margin: 5px 0;
+   }
+
+   .mobile {
+      display: block;
+   }
+
+   .desktop {
+      display: none;
+   }
+
+
+   /* Rpdapé */
+   img#logo_footer {
+      height: 130px;
+   }
+
+   p.footer_text {
+      font-size: 12px;
+   }
+
+   section#footer_links {
+      padding: 0;
+      margin: 0;
+   }
+
+   a.footer_link {
+      font-size: 12px;
+      padding: 0;
+      margin: 0;
+   }
+}
+
+@media (min-width: 551px) {
+   .mobile {
+      display: none;
+   }
+
+   .desktop {
+      display: block;
+   }
+}

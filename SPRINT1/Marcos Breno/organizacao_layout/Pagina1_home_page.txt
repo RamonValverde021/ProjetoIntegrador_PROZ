@@ -1,0 +1,31 @@
+Informações para a criação do layout da primeira tela do projeto, utilizando-se a ferramenta Figma.
+
+Estutura da 1ª tela:
+
+Título: Bem-vindo ao portal EcoResidencial
+Conteúdo: Breve introdução sobre o site...
+Imagens: Fotos ilustrativas de práticas sustentáveis...
+
+
+Layout Visual:
+
+1. Cabeçalho:
+* Logotipo
+* Menu de Navegação: Home, Sobre, Pesquisas e Dados, Soluções Práticas, Comunicação e Conflitos, Contatos e Envolvimento.
+
+2. Introdução:
+* Título: Bem-vindo ao portal EcoResidencial.
+* Texto: Descubra como transformar seu condomínio em um modelo de sustentabilidade!
+	   No EcoResidencial, oferecemos dicas práticas, soluções inovadoras e insights valiosos para ajudar sua comunidade a reduzir desperdícios, otimizar recursos e promover um ambiente mais verde e saudável.
+	   Junte-se a nós na missão de transformar resíduos em riquezas e criar um futuro sustentável para todos. 
+
+
+3. Seção de destaques:
+* Inserção de imagens com seus respectivos títulos e breve introdução sobre o que será abordado.
+* Inserir um botão "Leia mais" para que o leitor acesse a página do conteúdo requisitado.
+* Inserir outro botão com o título "Ler mais" para que o leitor acesse novas notícias ou destaques.
+
+4. Rodapé:
+* Logotipo 
+* Links úteis: Sobre nós, Dicas de Sustentabilidade, Compostagem, Política de Privacidade, Termos de Uso.
+* Contatos: Email, Telefone e Endereço.

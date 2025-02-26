@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* Fonte Principal - Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+   /* Resetar modulos de espaçamentos*/
+   margin: 0px;
+   padding: 0px;
+}
+
+html {
+   font-family: "Open Sans", sans-serif;
+}
+
+main.principal {
+   width: 76%;
+   margin: 2% 10%;
+   padding: 2%;
+   border: 2px solid darkgray;
+   border-radius: 12px;
+   box-shadow: 0px 0px 10px 2px darkgray;
+   display: flex;
+   flex-wrap: nowrap;
+}
+
+
+/* --------------------------- RESPONSIVIDADE --------------------------- */
+
+@media(max-width: 550px) {
+
+   main.principal {
+      width: 90%;
+      margin: 15px 5%;
+      padding: 15px;
+   }
+
+   h1.h1_main {
+      font-size: 25px;
+   }
+
+   legend.legend_1 {
+      font-size: 12px;
+   }
+
+   h2.h2_main {
+      font-size: 20px;
+      margin: 0;
+   }
+
+   p.p_main {
+      font-size: 12px;
+   }
+
+}
