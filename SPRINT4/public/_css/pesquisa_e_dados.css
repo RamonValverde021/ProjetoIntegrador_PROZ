@@ -91,10 +91,10 @@ p.p_main {
    font-size: 16px;
 }
 
-canvas.graficos {
-   background-color: darkgray;
-   border-radius: 20px;
-   padding-bottom: 10px;
+div#garfico_rosquinha {
+   width: 35vw;
+   height: auto;
+   text-align: center;
 }
 
 /* --------------------------- RESPONSIVIDADE --------------------------- */
@@ -124,4 +124,8 @@ canvas.graficos {
       font-size: 12px;
    }
 
+   div#garfico_rosquinha {
+      width: 80vw;
+      height: auto;
+   }
 }

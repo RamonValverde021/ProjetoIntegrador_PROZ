@@ -19,7 +19,7 @@ var chartGraph1 = new Chart(ctx1, {
                 '#29338d',
                 '#58ae33'
             ],
-            hoverOffset: 4,
+            hoverOffset: 10,
         }]
     },
     options: {
