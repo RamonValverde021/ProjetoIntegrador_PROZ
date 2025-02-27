@@ -1,4 +1,4 @@
-
+Chart.defaults.font.size = 16;
 // Grafico 01
 // Textos personalizados para cada fatia
 const texto_grafico_1 = ['43,8%', '56,3%'];
@@ -362,7 +362,7 @@ new Chart(document.getElementById("chart_10"), {
         datasets: [
             {
                 label: 'Respostas: ',
-                data: [ , , 50, 6.25, 37.5, 6.25],
+                data: [ , 20, 6.7, , 20, 53.3],
                 backgroundColor: ['#3366cc', '#dc3912', 'orange', 'green', 'purple', 'DarkCyan'], // red e blue
             }
         ]

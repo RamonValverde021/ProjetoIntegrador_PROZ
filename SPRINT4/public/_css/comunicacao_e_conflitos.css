@@ -68,6 +68,7 @@ p.paragrafo {
    color: rgb(44, 44, 44);
    font-weight: 550;
    font-size: 16px;
+   text-indent: 50px;
 }
 
 p.paragrafo_dica {
