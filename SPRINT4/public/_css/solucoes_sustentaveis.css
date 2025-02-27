@@ -1,166 +1,185 @@
 @charset "UTF-8";
 
 /* Fonte Principal - Open Sans*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-   /* Resetar modulos de espaçamentos*/
-   margin: 0px;
-   padding: 0px;
-   box-sizing: border-box;
+    /* Resetar modulos de espaçamentos*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 html {
-   font-family: "Open Sans", sans-serif;
-   scroll-behavior: smooth;
+    font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
 main.principal {
-   width: 76%;
-   margin: 2% 10%;
-   padding: 2%;
-   border: 2px solid darkgray;
-   border-radius: 12px;
-   box-shadow: 0px 0px 10px 2px darkgray;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+    width: 76%;
+    margin: 2% 10%;
+    padding: 2%;
+    border: 2px solid darkgray;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 2px darkgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Navegação interna */
 ul.submenu_ul {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 10px;
-   padding: 15px 0;
-   margin-bottom: 20px;
-   border-bottom: 2px solid #2e8b57;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2e8b57;
 }
 
 li.submenu_li {
-   display: flex;
-   align-items: center;
-   gap: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 a.submenu_a {
-   color: #333;
-   text-decoration: none;
-   padding: 8px 12px;
-   border-radius: 5px;
-   transition: all 0.3s;
-   background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    background-color: #f0f0f0;
 }
 
 a.submenu_a:hover {
-   background-color: #2e8b57;
-   color: white;
+    background-color: #2e8b57;
+    color: white;
 }
 
 /* Cards */
-article#card_intro {
-   margin-bottom: 10px;
-   padding: 20px;
-}
-
 article.cards {
-   background-color: #fff;
-   padding: 20px;
-   margin-bottom: 25px;
-   border: 1px solid darkgray;
-   border-radius: 15px;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   transition: transform 0.3s box-shadow 0.3s;
-   overflow: auto;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+    /* gap: 20px; */
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid darkgray;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s box-shadow 0.3s;
+    overflow: auto;
 }
 
 article.cards:hover {
-   transform: translateY(-3px);
-   box-shadow: 0px 0px 10px 2px darkgray;
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 10px 2px darkgray;
 }
 
 /* Títulos e Textos */
-h1.h1_principal {
-   width: 100%;
-   color: rgb(22, 138, 80);
-   text-align: center;
-   margin-bottom: 10px;
-   font-size: 33px;
+section.textos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* align-items: flex-start; */
+    /* justify-content: center; */
 }
 
-h2#introducao-sustentabilidade {
-   color: rgb(22, 138, 80);
+h1.h1_principal {
+    width: 100%;
+    color: rgb(22, 138, 80);
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 33px;
 }
 
 h2.h2_subtitulo {
-   font-size: 2em;
-   margin-bottom: 15px;
-   color: rgb(22, 105, 138);
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: rgb(22, 105, 138);
 }
 
 p.paragrafo {
-   line-height: 1.6;
-   margin-bottom: 15px;
-   color: rgb(44, 44, 44);
-   font-weight: 550;
-   font-size: 16px;
-   text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: rgb(44, 44, 44);
+    font-weight: 550;
+    font-size: 16px;
+    text-align: justify;
 }
 
 /* Imagens */
 figure.conteiner_figuras {
-   float: left;
-   margin-right: 20px;
-   text-align: center;
-   max-width: 45%;
-}
-
-figcaption.legenda_figuras {
-   text-align: center;
-   font-size: 0.85em;
-   color: #666;
-   margin-top: 2px;
+    /* flex: 1; */
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+    max-width: 45%;
 }
 
 img.figura {
-   max-width: 100%;
-   height: auto;
-   border-radius: 10px;
-   box-shadow: 0px 0px 5px 2px darkgray;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 2px darkgray;
+}
+
+/* Estilo para o botão de ler mais */
+button.leia-mais {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+    color: white;
+    background-color: #2e8b57;
+    /* Verde escuro */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button.leia-mais:hover {
+    background-color: #228b22; /* Deixar o verde mais escuro no hover */
+    transform: scale(1.05); /* Dá um efeito de aumento suave */
+}
+
+/* Estilo para os cards ocultos */
+article.cards.oculto {
+    display: none;
+    /* Inicialmente oculto */
 }
 
 /* --------------------------- RESPONSIVIDADE --------------------------- */
 
-@media(max-width: 550px) {
+@media (max-width: 550px) {
+    main.principal {
+        width: 90%;
+        margin: 15px 5%;
+        padding: 15px;
+    }
 
-   main.principal {
-      width: 90%;
-      margin: 15px 5%;
-      padding: 15px;
-   }
+    h1.h1_principal {
+        font-size: 25px;
+    }
 
-   h1.h1_principal {
-      font-size: 25px;
-   }
-   h2#introducao-sustentabilidade {
-      font-size: 22px; 
-   }
+    h2.h2_subtitulo {
+        font-size: 20px;
+    }
 
-   h2.h2_subtitulo {
-      font-size: 20px;
-   }
+    a.submenu_a {
+        font-size: 12px;
+    }
 
-   a.submenu_a {
-      font-size: 12px;
-   }
+    figure.conteiner_figuras {
+        max-width: 100%;
+        margin: 0 0 10px 0;
+    }
 
-   figure.conteiner_figuras {
-      max-width: 100%;
-      margin: 0 0 10px 0;
-   }
-
-   p.paragrafo {
-      font-size: 12px;
-   }
-
+    p.paragrafo {
+        font-size: 12px;
+    }
 }
