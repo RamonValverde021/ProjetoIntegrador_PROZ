@@ -62,76 +62,34 @@ const sustentabilidadeArray = [
 document.addEventListener("DOMContentLoaded", () => {
     const cardContainer = document.getElementById("card-container")
 
-    // Renderizar o card de introdução
-    const introCard = document.createElement("article")
-    introCard.classList.add("cards")
-
-    const introTitle = document.createElement("h2")
-    introTitle.classList.add("h2_subtitulo")
-    introTitle.textContent = sustentabilidadeArray[0].titulo
-
-    const introParagraph = document.createElement("p")
-    introParagraph.classList.add("paragrafo")
-    introParagraph.textContent = sustentabilidadeArray[0].conteudo
-
-    const introImage = document.createElement("img")
-    introImage.src = sustentabilidadeArray[0].image
-    introImage.alt = sustentabilidadeArray[0].alt
-    introImage.classList.add("figura")
-
-    // Criar o botão "Leia Mais" para a introdução
-    const introButton = document.createElement("button")
-    introButton.classList.add("leia-mais")
-    introButton.textContent = "Leia Mais..."
-
-    // Adicionar os elementos ao card de introdução
-    introCard.appendChild(introTitle)
-    introCard.appendChild(introParagraph)
-    introCard.appendChild(introImage)
-    introCard.appendChild(introButton)
-
-    // Adicionar o card de introdução ao contêiner principal
-    cardContainer.appendChild(introCard)
-
-    // Renderizar os outros cards (ocultos inicialmente)
-    const otherCards = []
-    for (let c = 1; c < sustentabilidadeArray.length; c++) {
-        const item = sustentabilidadeArray[c]
-
-        // Esconder os cards inicialmente
+    sustentabilidadeArray.forEach((item) => {
+        // Cria o elemento <article> para o card
         const divCard = document.createElement("article")
-        divCard.classList.add("cards", "oculto")
+        divCard.classList.add("cards")
+        divCard.id = item.id
 
+        // Cria o título do card
         const title = document.createElement("h2")
         title.classList.add("h2_subtitulo")
         title.textContent = item.titulo
 
+        // Cria o parágrafo do card
         const paragraph = document.createElement("p")
         paragraph.classList.add("paragrafo")
         paragraph.textContent = item.conteudo
 
+        // Cria a imagem do card
         const image = document.createElement("img")
         image.src = item.image
         image.alt = item.alt
         image.classList.add("figura")
 
+        // Adiciona os elementos ao card
         divCard.appendChild(title)
         divCard.appendChild(paragraph)
         divCard.appendChild(image)
 
-        // Armazenar os cards para manipulação posterior
+        // Adiciona o card ao contêiner principal
         cardContainer.appendChild(divCard)
-        otherCards.push(divCard)
-    }
-
-    // Adicionar uma funcionalidade ao botão "Leia Mais"
-    introButton.addEventListener("click", () => {
-        // Mostra todos os cards
-        otherCards.forEach((card) => {
-            card.classList.remove("oculto")
-        })
-
-        // Remover o botão "Leia Mais" após o clique
-        introButton.style.display = "none"
     })
 })

@@ -127,32 +127,6 @@ img.figura {
     box-shadow: 0px 0px 5px 2px darkgray;
 }
 
-/* Estilo para o botão de ler mais */
-button.leia-mais {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 8px 16px;
-    font-size: 0.9em;
-    color: white;
-    background-color: #2e8b57;
-    /* Verde escuro */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-button.leia-mais:hover {
-    background-color: #228b22; /* Deixar o verde mais escuro no hover */
-    transform: scale(1.05); /* Dá um efeito de aumento suave */
-}
-
-/* Estilo para os cards ocultos */
-article.cards.oculto {
-    display: none;
-    /* Inicialmente oculto */
-}
-
 /* --------------------------- RESPONSIVIDADE --------------------------- */
 
 @media (max-width: 550px) {
