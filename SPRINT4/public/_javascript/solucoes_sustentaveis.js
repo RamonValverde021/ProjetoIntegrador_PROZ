@@ -79,10 +79,10 @@ document.addEventListener("DOMContentLoaded", () => {
     introImage.alt = sustentabilidadeArray[0].alt
     introImage.classList.add("figura")
 
-    // Criar o botão "Ler Mais" para a introdução
+    // Criar o botão "Leia Mais" para a introdução
     const introButton = document.createElement("button")
-    introButton.classList.add("ler-mais")
-    introButton.textContent = "ler-mais"
+    introButton.classList.add("leia-mais")
+    introButton.textContent = "Leia Mais..."
 
     // Adicionar os elementos ao card de introdução
     introCard.appendChild(introTitle)
@@ -95,8 +95,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Renderizar os outros cards (ocultos inicialmente)
     const otherCards = []
-    for (let i = 1; i < sustentabilidadeArray.length; i++) {
-        const item = sustentabilidadeArray[i]
+    for (let c = 1; c < sustentabilidadeArray.length; c++) {
+        const item = sustentabilidadeArray[c]
 
         // Esconder os cards inicialmente
         const divCard = document.createElement("article")
@@ -124,14 +124,14 @@ document.addEventListener("DOMContentLoaded", () => {
         otherCards.push(divCard)
     }
 
-    // Adicionar uma funcionalidade ao botão "Ler Mais"
+    // Adicionar uma funcionalidade ao botão "Leia Mais"
     introButton.addEventListener("click", () => {
         // Mostra todos os cards
         otherCards.forEach((card) => {
             card.classList.remove("oculto")
         })
 
-        // Remover o botão "Ler Mais" após o clique
+        // Remover o botão "Leia Mais" após o clique
         introButton.style.display = "none"
     })
 })
