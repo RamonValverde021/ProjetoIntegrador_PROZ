@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Container para os parágrafos
         const contentContainer = document.createElement("div")
         contentContainer.classList.add("paragrafo-container")
-        contentContainer.innerHTML = item.conteudo 
+        contentContainer.innerHTML = item.conteudo
 
         const image = document.createElement("img")
         image.src = item.image
