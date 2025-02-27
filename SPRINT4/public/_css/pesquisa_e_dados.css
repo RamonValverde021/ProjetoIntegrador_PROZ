@@ -130,8 +130,14 @@ div.conteiner_chart {
    min-width: 50%;
 }
 
+div#garfico_07 {
+   margin-top: 50px;
+   margin-bottom: 30px;
+}
+
 div#garfico_10 {
-   margin-top: 30px;
+   margin-top: 50px;
+   margin-bottom: 30px;
 }
 
 /* --------------------------- RESPONSIVIDADE --------------------------- */
