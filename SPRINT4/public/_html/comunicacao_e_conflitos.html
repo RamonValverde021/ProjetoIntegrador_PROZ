@@ -96,23 +96,25 @@
             </div>
             <ul class="formulario_ul">
                 <li class="formulario_li"><a class="formulario_a" href="">» Workshop</a></li>
-                <li class="formulario_li"><a class="formulario_a" href="">» JogoDigital</a></li>
+                <li class="formulario_li"><a class="formulario_a" href="">» Jogo Digital</a></li>
             </ul>
-            <form action="" method="get" name="contato" />
-            <fieldset class="fieldset_form">
-                <label class="label_form" for="Nome">Nome:</label>
-                <input id="Nome" class="input_form" type="text" size="40" placeholder="Digite seu nome e sobrenome" />
-                <label class="label_form" for="Email">E-Mail:</label>
-                <input id="Email" class="input_form" type="text" size="40"
-                    placeholder="Digite seu e-mail" />
-                <label class="label_form" for="Unidade">Unidade:</label>
-                <input id="Unidade" class="input_form" type="number" size="04" placeholder="0604" />
-                <label class="label_form" for="mensagem_contato">Digite sua opinião sobre comunicação e conflitos
-                    aqui!</label>
-                <textarea name="mensagem" id="mensagem_contato" class="textarea_form" cols="30px" rows="5" placeholder="Digite sua opinião aqui"></textarea>
-            </fieldset>
-            <button class="btn_enviar">Enviar</button>
+            <form action="" method="get" name="contato" id="contatoForm">
+                <fieldset class="fieldset_form">
+                    <label class="label_form" for="Nome">Nome:</label>
+                    <input id="Nome" class="input_form" type="text" size="40" placeholder="Digite seu nome e sobrenome" required />
+                    
+                    <label class="label_form" for="Email">E-Mail:</label>
+                    <input id="Email" class="input_form" type="email" size="40" placeholder="Digite seu e-mail" required />
+                    
+                    <label class="label_form" for="Unidade">Unidade:</label>
+                    <input id="Unidade" class="input_form" type="number" size="04" placeholder="0604" required />
+                    
+                    <label class="label_form" for="mensagem_contato">Digite sua opinião sobre comunicação e conflitos aqui!</label>
+                    <textarea name="mensagem" id="mensagem_contato" class="textarea_form" cols="30" rows="5" placeholder="Digite sua opinião aqui" required></textarea>
+                </fieldset>
+                <button type="submit" class="btn_enviar">Enviar</button>
             </form>
+            <div id="feedback" class="feedback"></div>
         </section>
     </main>
 
