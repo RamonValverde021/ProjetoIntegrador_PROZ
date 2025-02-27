@@ -30,6 +30,13 @@ h1.h1_principal {
    font-size: 33px;
 }
 
+h2.h2_main {
+   width: 100%;
+   text-align: left;
+   color: rgb(22, 105, 138);
+   margin: 50px 0 10px 0;
+}
+
 p.paragrafo {
    color: rgb(44, 44, 44);
    font-weight: 550;
