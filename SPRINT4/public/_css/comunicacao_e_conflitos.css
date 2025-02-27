@@ -79,7 +79,6 @@ p.paragrafo_dica {
    font-size: 16px;
    font-style: italic;
 }
-
 ul.formulario_ul {
    list-style: none;
    display: flex;
@@ -162,6 +161,40 @@ textarea.textarea_form {
    height: 100px;
 }
 
+/* Para estilo básico e responsivo: */
+
+.formulario_ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+.formulario_li {
+   display: inline;
+   margin-right: 15px;
+}
+
+.fieldset_form {
+   margin: 20px 0;
+}
+
+.input_form, .textarea_form {
+   width: 100%;
+   max-width: 400px; /* Limita a largura máxima */
+   margin-bottom: 10px;
+}
+
+.btn_enviar {
+   padding: 10px 20px;
+   background-color: #4CAF50;
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+
+.feedback {
+   margin-top: 20px;
+   color: green;
+}
 div.div_iframe {
    width: 100%;
    text-align: center;
@@ -174,7 +207,6 @@ iframe.iframe_video {
    border-radius: 10px;
    box-shadow: 0px 0px 5px 2px darkgray;
 }
-
 /* --------------------------- RESPONSIVIDADE --------------------------- */
 
 @media(max-width: 550px) {
