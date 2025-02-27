@@ -156,14 +156,32 @@ div#garfico_10 {
 
    legend.legend_1 {
       font-size: 12px;
+      margin-bottom: 20px;
    }
 
    h2.h2_main {
       font-size: 20px;
-      margin: 0;
+   }
+
+   h2.h2_grafico {
+      font-size: 18px;
+   }
+
+   h3.h3_grafico {
+      font-size: 14px;
+   }
+
+   h3.h3_main {
+      font-size: 16px;
+      margin-top: 0;
+      margin-bottom: 10px;
    }
 
    p.p_main {
+      font-size: 12px;
+   }
+
+   p.citacao {
       font-size: 12px;
    }
 
