@@ -31,7 +31,7 @@ main.principal {
 /* Navegação interna */
 section#solucoes-sustentaveis {
     padding: 20px 15px; /* Espaçamento interno */
-    margin: 0 10%; /* Centraliza e adiciona margem lateral */
+    /* margin: 0 10%; Centraliza e adiciona margem lateral */
     max-width: 1200px; /* Limita a largura máxima para telas grandes */
 }
 ul.submenu_ul {
