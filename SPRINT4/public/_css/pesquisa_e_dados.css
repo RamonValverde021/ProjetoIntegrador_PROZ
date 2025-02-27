@@ -68,21 +68,22 @@ h1.h1_main {
    font-size: 33px;
 }
 
-h2.h2_main {
-   width: 100%;
-   text-align: left;
-   color: rgb(22, 105, 138);
-   margin-top: 30px;
-   margin-bottom: 10px;
-}
-
 legend.legend_1 {
    width: 100%;
    text-align: center;
    color: #b8740e;
    font-weight: bold;
    font-size: 15px;
-   margin-bottom: -5px;
+   margin-bottom: 30px;
+}
+
+h3.h3_grafico {
+   width: 100%;
+   text-align: left;
+   font-size: 20px;
+   font-weight: 500;
+   color: rgb(22, 105, 138);
+   margin-bottom: -30px;
 }
 
 p.p_main {
@@ -91,10 +92,12 @@ p.p_main {
    font-size: 16px;
 }
 
-div#garfico_rosquinha {
-   width: 35vw;
-   height: auto;
-   text-align: center;
+div.conteiner_chart {
+   min-width: 50%;
+}
+
+div#garfico_10 {
+   margin-top: 30px;
 }
 
 /* --------------------------- RESPONSIVIDADE --------------------------- */

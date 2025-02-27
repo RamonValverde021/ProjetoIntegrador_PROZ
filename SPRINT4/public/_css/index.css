@@ -20,10 +20,62 @@ main.principal {
    border: 2px solid darkgray;
    border-radius: 12px;
    box-shadow: 0px 0px 10px 2px darkgray;
-   display: flex;
-   flex-wrap: nowrap;
 }
 
+h1.h1_principal {
+   width: 100%;
+   color: rgb(22, 138, 80);
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 33px;
+}
+
+p.paragrafo {
+   color: rgb(44, 44, 44);
+   font-weight: 550;
+   font-size: 16px;
+}
+
+
+/* --------------------------- CARROSEL --------------------------- */
+div.carousel-inner {
+   border-radius: 10px;
+   box-shadow: 0px 0px 5px 2px darkgray;
+}
+img.d-block {
+   
+}
+
+span.carousel-control-prev-icon,
+span.carousel-control-next-icon {
+   padding: 25px;
+   border-radius: 10px;
+}
+
+span.carousel-control-prev-icon:hover,
+span.carousel-control-next-icon:hover {
+   background-color: rgba(15, 70, 87, 0.5);
+}
+
+div.carousel-caption>h5 {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 30px;
+   margin-bottom: -10px;
+   -webkit-text-stroke: 1px 2F4F4F;
+   color: white;
+   text-shadow: 2px 2px 2px rgb(0, 73, 37);
+   /* #2F4F4F; */
+}
+
+div.carousel-caption>p {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 22px;
+   padding: 2% 0;
+   margin-bottom: -10px;
+   -webkit-text-stroke: 1px 2F4F4F;
+   color: white;
+   text-shadow: 2px 2px 2px rgb(0, 73, 37);
+}
 
 /* --------------------------- RESPONSIVIDADE --------------------------- */
 
